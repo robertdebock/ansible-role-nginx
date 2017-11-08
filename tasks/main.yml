@@ -16,8 +16,14 @@
     dest: /etc/nginx/conf.d/default.conf
 
 - name: include distribution specific tasks
-  include_tasks: "{{ item }}"
+  include_vars: "{{ item }}"
   with_first_found:
     - "{{ ansible_distribution }}-{{ ansible_distribution_major_version}}.yml"
     - "{{ ansible_distribution }}.yml"
     - "default.yml"
+
+- name: start service
+  "{{ ansible_module }}":
+    name: "{{ service_name }}"
+    state: started
+    enabled: yes

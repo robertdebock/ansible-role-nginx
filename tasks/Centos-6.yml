@@ -1,6 +1,0 @@
----
-- name: start service nginx (centos-6)
-  service:
-    name: nginx
-    state: started
-    enabled: yes

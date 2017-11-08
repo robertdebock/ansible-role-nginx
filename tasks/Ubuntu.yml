@@ -1,6 +1,0 @@
----
-- name: start service nginx (ubuntu)
-  systemd:
-    name: nginx
-    state: started
-    enabled: yes

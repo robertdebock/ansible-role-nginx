@@ -1,6 +1,0 @@
----
-- name: start service nginx (alpine)
-  service:
-    name: nginx
-    state: started
-    enabled: yes
