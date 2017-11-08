@@ -1,5 +1,5 @@
 ---
 - name: inform user that this distribution is not supported
   debug:
-    msg: task service-{{ ansible_distribution}}-{{ansible_distribution_major_version }}.yml or service-{{ ansible_distribution}}.yml not found.
+    msg: task {{ ansible_distribution}}-{{ansible_distribution_major_version }}.yml or {{ ansible_distribution}}.yml not found.
   failed_when: yes
