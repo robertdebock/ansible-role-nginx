@@ -1,6 +1,6 @@
 ---
 - name: start service nginx (default)
-  service:
+  systemd:
     name: nginx
     state: started
     enabled: yes
