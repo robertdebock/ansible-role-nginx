@@ -23,7 +23,7 @@
     - "default.yml"
 
 - name: start service
-  "{{ ansible_module }}":
+  service:
     name: "{{ service_name }}"
     state: started
     enabled: yes
