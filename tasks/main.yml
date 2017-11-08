@@ -1,0 +1,16 @@
+---
+# tasks file for ansible-role-nginx
+- name: install software
+  package:
+    name: nginx
+
+- name: place config
+  template:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
+
+- name: start and enable software
+  systemd:
+    name: nginx
+    state: started
+    enabled: true

@@ -1,0 +1,3 @@
+---
+# defaults file for ansible-role-nginx
+port: 80
