@@ -12,7 +12,7 @@ Systems running this playbook should have access to a repository containing ngin
 Role Variables
 --------------
 
-None known
+- port - You can specify what port should be used to listen on. The default (defaults/main.yml) is port 80.
 
 Dependencies
 ------------
