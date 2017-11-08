@@ -15,9 +15,9 @@
     src: default.conf.j2
     dest: /etc/nginx/conf.d/default.conf
 
-- name: start service
+- name: include distribution specific tasks
   include: "{{ item }}"
   with_first_found:
-    - service-{{ ansible_distribution }}-{{ ansible_distribution_major_version}}.yml
-    - service-{{ ansible_distribution }}.yml
-    - service-default.yml
+    - "{{ ansible_distribution }}-{{ ansible_distribution_major_version}}.yml"
+    - "{{ ansible_distribution }}.yml"
+    - "default.yml"
