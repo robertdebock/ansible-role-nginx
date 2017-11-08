@@ -1,0 +1,6 @@
+---
+- name: start service nginx (fedora)
+  systemd:
+    name: nginx
+    state: started
+    enabled: yes

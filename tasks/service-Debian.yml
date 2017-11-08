@@ -1,0 +1,6 @@
+---
+- name: start service nginx (debian)
+  systemd:
+    name: nginx
+    state: started
+    enabled: yes

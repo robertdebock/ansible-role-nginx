@@ -1,6 +1,5 @@
 ---
-- name: start service nginx (default)
-  systemd:
-    name: nginx
-    state: started
-    enabled: yes
+- name: inform user that this distribution is not supported
+  debug:
+    msg: This distribution ({{ ansible_distribution}}-{{ansible_distribution_major_version }}) is not supported.
+  failed_when: yes
