@@ -1,0 +1,6 @@
+---
+- name: start service nginx (centos-6)
+  systemd:
+    name: nginx
+    state: started
+    enabled: yes
