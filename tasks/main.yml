@@ -19,3 +19,19 @@
     name: nginx
     state: started
     enabled: true
+
+- name: start and enable nginx using systemd
+  systemd:
+    name: nginx
+    state: started
+    enabled: yes
+  when:
+    - ( ansible_distribution == "Fedora" or ( ansible_distribution == "Centos" and ansible_distribution_major_version == "7" ) )
+
+- name: start and enable docker using service
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+  when:
+    - ( ansible_distribution == "Alpine" or ansible_distribution == "Debian" or ansible_distribution == "Ubuntu" )
