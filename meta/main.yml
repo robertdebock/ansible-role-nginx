@@ -1,6 +1,6 @@
 galaxy_info:
   author: Robert de Bock
-  description: adds nginx
+  description: Add ngnix to your machine.
 
   license: Apache License, Version 2.0
   min_ansible_version: 2.0
@@ -28,6 +28,8 @@ galaxy_info:
 
   galaxy_tags:
     - nginx
+    - web
+    - installer
     - alpine
     - centos
     - debian

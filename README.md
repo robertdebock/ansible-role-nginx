@@ -1,7 +1,7 @@
 nginx
 =========
 
-A role that adds nginx
+Add ngnix to your machine.
 
 Requirements
 ------------
@@ -23,9 +23,16 @@ Example Playbook
 ----------------
 
 ```
-- hosts: servers
+- hosts: all
+
   roles:
     - role: robertdebock.nginx
+
+  tasks:
+    - name: place some content
+      copy:
+        src: files/index.html
+        dest: /usr/share/nginx/html/index.html
 ```
 
 License
