@@ -1,2 +1,3 @@
-- name: robertdebock.epel
-  src: robertdebock.epel
+---
+- name: robertdebock.ansible-role-epel
+  src: robertdebock.ansible-role-epel

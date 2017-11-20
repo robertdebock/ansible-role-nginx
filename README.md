@@ -7,7 +7,6 @@ Requirements
 ------------
 
 Systems running this playbook should have access to a repository containing nginx.
-- robertdebock.epel
 
 Role Variables
 --------------
@@ -17,7 +16,7 @@ Role Variables
 Dependencies
 ------------
 
-- robertdebock.epel
+- robertdebock.ansible-role-epel
 
 Example Playbook
 ----------------
@@ -26,7 +25,7 @@ Example Playbook
 - hosts: all
 
   roles:
-    - role: robertdebock.nginx
+    - role: robertdebock.ansible-role-nginx
 
   tasks:
     - name: place some content

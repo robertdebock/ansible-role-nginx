@@ -3,7 +3,7 @@
   remote_user: root
 
   roles:
-    - nginx
+    - ansible-role-nginx
 
   tasks:
     - name: test if port is open
