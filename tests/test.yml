@@ -9,6 +9,6 @@
     - name: test if port is open
       wait_for:
         host: "{{ inventory_hostname }}"
-        port: "{{ port }}"
+        port: "{{ appport }}"
         delay: 5
         timeout: 30
