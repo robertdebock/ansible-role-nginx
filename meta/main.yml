@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Robert de Bock
   description: Add ngnix to your machine.
@@ -7,25 +8,25 @@ galaxy_info:
   min_ansible_container_version: 0.2.0
 
   platforms:
-  - name: Alpine
-    versions:
-      - all
-  - name: Debian
-    versions:
-      - jessie
-      - buster
-  - name: EL
-    versions:
-      - 6
-      - 7
-  - name: Fedora
-    versions:
-      - 26
-      - 27
-  - name: Ubuntu
-    versions:
-     - artful
-     - zesty
+    - name: Alpine
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - jessie
+        - buster
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Fedora
+      versions:
+        - 26
+        - 27
+    - name: Ubuntu
+      versions:
+        - artful
+        - zesty
 
   galaxy_tags:
     - nginx
