@@ -7,6 +7,6 @@
 
   tasks:
     - name: test nginx
-      shell: nginx --version > nginx.version
+      shell: nginx -V > nginx.version
       args:
         creates: nginx.version
