@@ -3,7 +3,7 @@ ansible-role-nginx
 
 [![Build Status](https://travis-ci.org/robertdebock/ansible-role-nginx.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-nginx)
 
-Add ngnix to your machine.
+Add nginx to your machine.
 
 Requirements
 ------------
@@ -20,6 +20,11 @@ Dependencies
 
 - robertdebock.ansible-role-epel
 
+Download the dependencies by issueing this command:
+```
+ansible-galaxy install --role-file requirements.yml
+```
+
 Example Playbook
 ----------------
 
@@ -28,6 +33,7 @@ Example Playbook
 
   roles:
     - role: robertdebock.ansible-role-nginx
+      appport: 8080
 
   tasks:
     - name: place some content
