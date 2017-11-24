@@ -32,7 +32,7 @@ Example Playbook
 - hosts: all
 
   roles:
-    - role: robertdebock.ansible-role-nginx
+    - role: ansible-role-nginx
       appport: 8080
 
   tasks:
