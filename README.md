@@ -32,7 +32,7 @@ Example Playbook
 - hosts: all
 
   roles:
-    - role: ansible-role-nginx
+    - role: robertdebock.ansible-role-nginx
       appport: 8080
 
   tasks:
@@ -41,6 +41,8 @@ Example Playbook
         src: files/index.html
         dest: /usr/share/nginx/html/index.html
 ```
+
+Install this role using `galaxy install robertdebock.ansible-role-bootstrap`.
 
 License
 -------
