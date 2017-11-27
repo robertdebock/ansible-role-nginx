@@ -42,7 +42,7 @@ Example Playbook
         dest: /usr/share/nginx/html/index.html
 ```
 
-Install this role using `galaxy install robertdebock.ansible-role-bootstrap`.
+Install this role using `galaxy install robertdebock.ansible-role-nginx`.
 
 License
 -------
