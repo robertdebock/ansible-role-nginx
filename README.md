@@ -1,7 +1,7 @@
 nginx
 =========
 
-[![Build Status](https://travis-ci.org/robertdebock.ansible-role-nginx.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-nginx)
+[![Build Status](https://travis-ci.org/robertdebock/ansible-role-nginx.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-nginx)
 
 Add nginx to your machine.
 
