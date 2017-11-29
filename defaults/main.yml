@@ -1,3 +1,3 @@
 ---
-# defaults file for ansible-role-nginx
+# defaults file for nginx
 appport: 80

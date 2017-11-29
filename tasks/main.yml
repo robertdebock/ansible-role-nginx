@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-role-nginx
+# tasks file for nginx
 - name: install software
   package:
     name: nginx

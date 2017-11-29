@@ -40,4 +40,4 @@ galaxy_info:
     - ubuntu
 
 dependencies:
-  - robertdebock.ansible-role-epel
+  - robertdebock.epel

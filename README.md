@@ -1,7 +1,7 @@
-ansible-role-nginx
+nginx
 =========
 
-[![Build Status](https://travis-ci.org/robertdebock/ansible-role-nginx.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-nginx)
+[![Build Status](https://travis-ci.org/robertdebock.ansible-role-nginx.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-nginx)
 
 Add nginx to your machine.
 
@@ -18,9 +18,9 @@ Role Variables
 Dependencies
 ------------
 
-- robertdebock.ansible-role-epel
+- robertdebock.epel
 
-Download the dependencies by issueing this command:
+Download the dependencies by issuing this command:
 ```
 ansible-galaxy install --role-file requirements.yml
 ```
@@ -32,7 +32,7 @@ Example Playbook
 - hosts: all
 
   roles:
-    - role: robertdebock.ansible-role-nginx
+    - role: robertdebock.nginx
       appport: 8080
 
   tasks:
@@ -42,7 +42,7 @@ Example Playbook
         dest: /usr/share/nginx/html/index.html
 ```
 
-Install this role using `galaxy install robertdebock.ansible-role-nginx`.
+Install this role using `galaxy install robertdebock.nginx`.
 
 License
 -------
