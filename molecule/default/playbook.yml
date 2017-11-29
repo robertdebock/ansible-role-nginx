@@ -3,7 +3,7 @@
   hosts: all
 
   roles:
-    - role: nginx
+    - role: ansible-role-nginx
 
   tasks:
     - name: test nginx
