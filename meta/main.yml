@@ -36,12 +36,12 @@ galaxy_info:
     - nginx
     - web
     - installer
-    - alpine
+    - Alpine
     - centos
-    - debian
+    - Debian
     - centos
     - redhat
-    - ubuntu
+    - Ubuntu
 
 dependencies:
   - robertdebock.epel
