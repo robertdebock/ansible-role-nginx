@@ -11,7 +11,8 @@
     dest: /etc/nginx/nginx.conf
 
 - name: ensure /etc/nginx/conf.d exists
-  file: /etc/nginx/conf.d
+  file:
+    path: /etc/nginx/conf.d
     state: directory
 
 - name: place default.conf
