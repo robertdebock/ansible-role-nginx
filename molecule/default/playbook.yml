@@ -2,7 +2,7 @@
 - name: Converge
   hosts: all
   gather_facts: no
-  
+
   roles:
     - role: ansible-role-nginx
 
