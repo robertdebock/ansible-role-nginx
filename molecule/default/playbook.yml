@@ -4,7 +4,7 @@
   gather_facts: no
 
   roles:
-    - role: ansible-role-nginx
+    - role: robertdebock.nginx
 
   tasks:
     - name: test nginx
