@@ -22,7 +22,7 @@
 
 - name: start service
   service:
-    name: "{{ nginx_service_name }}"
+    name: nginx
     state: started
     enabled: yes
   when:
