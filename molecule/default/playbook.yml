@@ -5,6 +5,8 @@
   strategy: free
 
   roles:
+    - role: robertdebock.bootstrap
+    - role: robertdebock.epel
     - role: ansible-role-nginx
 
   tasks:

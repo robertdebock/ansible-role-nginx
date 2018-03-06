@@ -18,6 +18,9 @@ Role Variables
 Dependencies
 ------------
 
+These roles prepare your system to use this role on them.
+
+- robertdebock.bootstrap
 - robertdebock.epel
 
 Download the dependencies by issuing this command:
@@ -32,6 +35,8 @@ Example Playbook
 - hosts: all
 
   roles:
+    - role: robertdebock.bootstrap
+    - role: robertdebock.epel
     - role: robertdebock.nginx
       appport: 8080
 

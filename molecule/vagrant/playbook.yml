@@ -5,6 +5,8 @@
   gather_facts: no
 
   roles:
+    - role: robertdebock.bootstrap
+    - role: robertdebock.epel
     - role: ansible-role-nginx
 
   tasks:

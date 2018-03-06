@@ -44,5 +44,4 @@ galaxy_info:
     - redhat
     - Ubuntu
 
-dependencies:
-  - robertdebock.epel
+dependencies: []
