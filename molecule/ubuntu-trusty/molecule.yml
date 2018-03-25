@@ -8,45 +8,14 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: nginx-archlinux
-    image: base/archlinux
-  - name: nginx-alpine-3.6
-    image: alpine:3.6
-  - name: nginx-alpine-3.7
-    image: alpine:3.7
-  - name: nginx-centos-6
-    image: centos:6
-  - name: nginx-centos-7
-    image: centos:7
-  - name: nginx-debian-jessie
-    image: debian:jessie
-  - name: nginx-debian-stretch
-    image: debian:stretch
-  - name: nginx-debian-buster
-    image: debian:buster
-  - name: nginx-fedora-26
-    image: fedora:26
-  - name: nginx-fedora-27
-    image: fedora:27
-  - name: nginx-opensuse-42.2
-    image: opensuse:42.2
-  - name: nginx-opensuse-42.3
-    image: opensuse:42.3
-    # 14.04 LTS
   - name: nginx-ubuntu-trusty
     image: ubuntu:trusty
-    # 16.04 LTS
-  - name: nginx-ubuntu-xenial
-    image: ubuntu:xenial
-    # 17.04
-  - name: nginx-ubuntu-artful
-    image: ubuntu:artful
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
 scenario:
-  name: default
+  name: ubuntu-trusty
   test_sequence:
     - lint
     - destroy
