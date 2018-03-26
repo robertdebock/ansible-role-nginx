@@ -8,8 +8,8 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: nginx-debian-wheeyzy
-    image: debian:wheeyzy
+  - name: nginx-debian-wheezy
+    image: debian:wheezy
 provisioner:
   name: ansible
   lint:
