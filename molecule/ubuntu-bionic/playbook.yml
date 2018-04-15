@@ -2,11 +2,13 @@
 - name: Converge
   hosts: all
   gather_facts: no
-  become: yes
 
   roles:
-    - role: ansible-role-bootstrap
+    - role: robertdebock.bootstrap
+    - role: ansible-role-nginx
 
   tasks:
-    - name: test connection
-      ping:
+    - name: test nginx
+      shell: nginx -V > nginx.version
+      args:
+        creates: nginx.version
