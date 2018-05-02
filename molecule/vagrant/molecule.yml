@@ -18,10 +18,10 @@ platforms:
     box: debian/jessie64
   - name: nginx-debian-buster64
     box: desc/buster64
-  - name: nginx-fedora-26-cloud-base
-    box: fedora/26-cloud-base
   - name: nginx-fedora-27-cloud-base
     box: fedora/27-cloud-base
+  - name: nginx-fedora-28-cloud-base
+    box: fedora/28-cloud-base
   - name: nginx-opensuse-openSUSE-42-2-x86-64
     box: opensuse/openSUSE-42.2-x86_64
   - name: nginx-ubuntu-trusty
