@@ -8,14 +8,14 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: nginx-debian-buster
-    image: debian:buster
+  - name: nginx-fedora-rawhide
+    image: fedora:rawhide
 provisioner:
   name: ansible
   lint:
     name: ansible-lint
 scenario:
-  name: debian-buster
+  name: fedora-rawhide
 verifier:
   name: goss
   lint:
