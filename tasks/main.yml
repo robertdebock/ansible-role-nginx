@@ -3,7 +3,6 @@
 - name: install software
   package:
     name: nginx
-    state: present
 
 - name: place nginx.conf
   template:
