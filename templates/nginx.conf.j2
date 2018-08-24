@@ -1,9 +1,11 @@
 {{ ansible_managed | comment }}
-user  nginx;
+user  {{ nginx_user }};
 worker_processes  1;
 
 error_log  /var/log/nginx/error.log warn;
+{% if ansible_distribution != "Archlinux" %}
 pid        /var/run/nginx.pid;
+{% endif %}
 
 events {
     worker_connections  1024;
