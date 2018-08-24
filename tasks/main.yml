@@ -21,7 +21,6 @@
   template:
     src: default.conf.j2
     dest: /etc/nginx/conf.d/default.conf
-    validate: nginx -t -c %s
   notify:
     - restart nginx
 
