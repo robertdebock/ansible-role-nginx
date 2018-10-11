@@ -1,5 +1,5 @@
 {{ ansible_managed | comment }}
-user                    {{ nginx_user }};
+user                    {{ nginx_user[ansible_distribution] | default(nginx_user['default']) }};
 worker_processes        1;
 
 error_log               /var/log/nginx/error.log warn;

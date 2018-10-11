@@ -1,19 +1,9 @@
 ---
 # tasks file for nginx
-- name: load default variables
-  include_vars:
-    file: default.yml
-
-- name: load os-specific variables
-  include_vars: "{{ item }}"
-  with_first_found:
-    - "{{ ansible_distribution }}.yml"
-    - default.yml
-
-- name: install software
+- name: install nginx
   package:
     name: nginx
-    state: present
+    state: "{{ nginx_package_state }}"
 
 - name: place nginx.conf
   template:
@@ -35,7 +25,7 @@
   notify:
     - restart nginx
 
-- name: start service
+- name: start and enable nginx
   service:
     name: nginx
     state: started
