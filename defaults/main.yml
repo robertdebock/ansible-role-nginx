@@ -1,5 +1,7 @@
 ---
 # defaults file for nginx
+
+# The tcp port nginx should listen on.
 nginx_port: 80
 
 # To update all packages installed by this roles, set `nginx_package_state` to `latest`.

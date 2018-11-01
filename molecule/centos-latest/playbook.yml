@@ -4,9 +4,9 @@
   gather_facts: false
 
   roles:
-    - role: robertdebock.bootstrap
-    - role: robertdebock.epel
-    - role: ansible-role-nginx
+    - robertdebock.bootstrap
+    - robertdebock.epel
+    - ansible-role-nginx
 
   tasks:
     - name: test nginx
