@@ -1,10 +1,12 @@
 ---
 - name: Converge
   hosts: all
-  gather_facts: false
+  gather_facts: no
+  become: yes
 
   roles:
     - robertdebock.bootstrap
+    - robertdebock.epel
     - ansible-role-nginx
 
   tasks:
