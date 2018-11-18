@@ -38,6 +38,8 @@ platforms:
     image: ubuntu:artful
   - name: nginx-ubuntu-devel
     image: ubuntu:devel
+  - name: nginx-ubuntu-latest
+    image: ubuntu:latest
 provisioner:
   name: ansible
   lint:
