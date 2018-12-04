@@ -4,6 +4,9 @@
   package:
     name: nginx
     state: "{{ nginx_package_state }}"
+  register: nginx_install_nginx
+  until: nginx_install_nginx
+  retries: 3
 
 - name: place nginx.conf
   template:
