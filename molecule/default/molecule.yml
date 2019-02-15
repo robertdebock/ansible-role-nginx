@@ -34,8 +34,10 @@ platforms:
     image: opensuse:leap
   - name: nginx-opensuse-tumbleweed
     image: opensuse:tumbleweed
-  - name: nginx-ubuntu-artful
-    image: ubuntu:artful
+  - name: nginx-ubuntu-latest
+    image: ubuntu:latest
+  - name: nginx-ubuntu-rolling
+    image: ubuntu:rolling
   - name: nginx-ubuntu-devel
     image: ubuntu:devel
   - name: nginx-ubuntu-latest
