@@ -32,8 +32,6 @@ platforms:
     image: fedora:rawhide
   - name: nginx-opensuse-leap
     image: opensuse:leap
-  - name: nginx-opensuse-tumbleweed
-    image: opensuse:tumbleweed
   - name: nginx-ubuntu-latest
     image: ubuntu:latest
   - name: nginx-ubuntu-rolling
