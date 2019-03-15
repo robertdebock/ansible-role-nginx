@@ -3,7 +3,7 @@
 - name: install nginx
   package:
     name: nginx
-    state: "{{ nginx_package_state }}"
+    state: present
   register: nginx_install_nginx
   until: nginx_install_nginx
   retries: 3
@@ -34,4 +34,4 @@
     state: started
     enabled: yes
   when:
-    - ansible_virtualization_type != "docker" or nginx_ignore_docker
+    - ansible_virtualization_type != "docker"
