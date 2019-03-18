@@ -6,3 +6,9 @@
 
   roles:
     - ansible-role-nginx
+
+  tasks:
+    - name: test nginx
+      shell: nginx -V > nginx.version
+      args:
+        creates: nginx.version

@@ -6,9 +6,3 @@
   roles:
     - robertdebock.bootstrap
     - robertdebock.epel
-
-  tasks:
-    - name: test nginx
-      shell: nginx -V > nginx.version
-      args:
-        creates: nginx.version
