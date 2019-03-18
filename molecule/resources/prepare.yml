@@ -1,11 +1,11 @@
 ---
-- name: Converge
+- name: Prepare
   hosts: all
-  gather_facts: false
+  gather_facts: no
 
   roles:
     - robertdebock.bootstrap
-    - ansible-role-nginx
+    - robertdebock.epel
 
   tasks:
     - name: test nginx
