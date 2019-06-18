@@ -5,7 +5,7 @@
     name: nginx
     state: present
   register: nginx_install_nginx
-  until: nginx_install_nginx
+  until: nginx_install_nginx is succeeded
   retries: 3
 
 - name: place nginx.conf
