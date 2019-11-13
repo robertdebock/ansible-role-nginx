@@ -85,12 +85,9 @@ This role has been tested on these [container images](https://hub.docker.com/):
 
 |container|tag|allow_failures|
 |---------|---|--------------|
-|amazonlinux|1|no|
 |amazonlinux|latest|no|
 |debian|unstable|yes|
 |debian|latest|no|
-|centos|7|no|
-|redhat|7|no|
 |centos|latest|no|
 |redhat|latest|no|
 |fedora|latest|no|
@@ -112,6 +109,8 @@ Some variarations of the build matrix do not work. These are the variations and 
 | variation                 | reason                 |
 |---------------------------|------------------------|
 | Alpine | can't create /sys/fs/cgroup/systemd/tasks: Read-only file system |
+| amazonlinux:1 | etc/init.d/nginx: line 17: /etc/sysconfig/network: No such file or directory |
+| centos:7 | Package: 1:nginx Requires: libprofiler.so.0 |
 
 
 
