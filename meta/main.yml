@@ -38,6 +38,5 @@ galaxy_info:
     - centos
     - redhat
     - rhel
-    - ubuntu
 
 dependencies: []
