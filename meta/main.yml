@@ -35,7 +35,6 @@ galaxy_info:
     - nginx
     - web
     - installer
-    - alpine
     - centos
     - debian
     - redhat
