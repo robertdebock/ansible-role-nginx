@@ -36,7 +36,6 @@ galaxy_info:
     - web
     - installer
     - centos
-    - debian
     - redhat
     - rhel
     - ubuntu
