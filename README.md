@@ -114,7 +114,6 @@ Some variarations of the build matrix do not work. These are the variations and 
 | centos:7 | Package: 1:nginx Requires: libprofiler.so.0 |
 
 
-
 Testing
 -------
 
