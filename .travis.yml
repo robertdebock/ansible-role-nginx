@@ -20,6 +20,7 @@ env:
     - image="debian"
     - image="centos"
     - image="redhat"
+    - image="redhat"
     - image="fedora"
     - image="fedora" tag="rawhide"
     - image="opensuse"
