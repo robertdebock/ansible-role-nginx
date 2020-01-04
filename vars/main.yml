@@ -2,7 +2,6 @@
 # vars file for nginx
 _nginx_user:
   default: nginx
-  Archlinux: root
   Debian: root
   RedHat: nginx
 
