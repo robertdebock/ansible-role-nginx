@@ -17,7 +17,7 @@ This example is taken from `molecule/resources/converge.yml` and is tested on ea
   gather_facts: yes
 
   roles:
-    - robertdebock.nginx
+    - role: robertdebock.nginx
 
   tasks:
     - name: test nginx

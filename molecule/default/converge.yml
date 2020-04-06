@@ -5,7 +5,7 @@
   gather_facts: yes
 
   roles:
-    - ansible-role-nginx
+    - role: ansible-role-nginx
 
   tasks:
     - name: test nginx
