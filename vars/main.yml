@@ -1,5 +1,6 @@
 ---
 # vars file for nginx
+
 _nginx_user:
   default: nginx
   Debian: root
