@@ -6,3 +6,4 @@
       - nginx_port | int
       - nginx_port | int > 0
       - nginx_port | int < 65536
+    quiet: yes
