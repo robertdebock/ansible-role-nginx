@@ -33,8 +33,5 @@ galaxy_info:
     - nginx
     - web
     - installer
-    - centos
-    - redhat
-    - redhat
 
 dependencies: []
