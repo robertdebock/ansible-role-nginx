@@ -3,7 +3,7 @@
   assert:
     that:
       - nginx_port is defined
-      - nginx_port | int
+      - nginx_port is number
       - nginx_port | int > 0
       - nginx_port | int < 65536
     quiet: yes
