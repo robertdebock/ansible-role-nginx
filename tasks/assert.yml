@@ -1,4 +1,5 @@
 ---
+
 - name: test if nginx_port is set correctly
   assert:
     that:
