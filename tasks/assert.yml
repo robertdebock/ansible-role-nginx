@@ -1,7 +1,7 @@
 ---
 
 - name: test if nginx_port is set correctly
-  assert:
+  ansible.builtin.assert:
     that:
       - nginx_port is defined
       - nginx_port is number
