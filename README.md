@@ -4,7 +4,7 @@ Install and configure nginx on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-nginx/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-nginx/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-nginx/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-nginx)|[![quality](https://img.shields.io/ansible/quality/21797)](https://galaxy.ansible.com/robertdebock/nginx)|[![downloads](https://img.shields.io/ansible/role/d/21797)](https://galaxy.ansible.com/robertdebock/nginx)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-nginx.svg)](https://github.com/robertdebock/ansible-role-nginx/releases/)|
+|[![github](https://github.com/robertdebock/ansible-role-nginx/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-nginx/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-nginx/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-nginx)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/nginx)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/nginx)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-nginx.svg)](https://github.com/robertdebock/ansible-role-nginx/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -62,8 +62,8 @@ The following roles are used to prepare a system. You may choose to prepare your
 
 | Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-| [robertdebock.bootstrap](https://galaxy.ansible.com/robertdebock/bootstrap) | [![Build Status GitHub](https://github.com/robertdebock/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bootstrap/actions) | [![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-bootstrap)
-| [robertdebock.epel](https://galaxy.ansible.com/robertdebock/epel) | [![Build Status GitHub](https://github.com/robertdebock/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-epel/actions) | [![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-ansible-role-epel/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-epel)
+|[robertdebock.bootstrap](https://galaxy.ansible.com/robertdebock/bootstrap)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-bootstrap)|
+|[robertdebock.epel](https://galaxy.ansible.com/robertdebock/epel)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-epel/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-epel/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-epel/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-epel)|
 
 ## [Context](#context)
 
