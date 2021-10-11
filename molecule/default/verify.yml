@@ -5,5 +5,7 @@
   gather_facts: no
 
   tasks:
-    - name: check if connection still works
-      ansible.builtin.ping:
+    - name: test nginx
+      ansible.builtin.shell:
+        cmd: nginx -V
+      changed_when: no
