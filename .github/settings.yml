@@ -5,4 +5,4 @@
 repository:
   description: Install and configure nginx on your system.
   homepage: https://robertdebock.nl/
-  topics: nginx, web, installer, ansible, molecule, tox, playbook
+  topics: nginx, web, installer, networking, ansible, molecule, tox, playbook
