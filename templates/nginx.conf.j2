@@ -3,7 +3,7 @@ user                    {{ nginx_user }};
 worker_processes        1;
 
 error_log               /var/log/nginx/error.log warn;
-{% if ansible_distribution != "Archlinux" %}
+{% if ansible_facts['distribution'] != "Archlinux" %}
 pid                     /var/run/nginx.pid;
 {% endif %}
 
